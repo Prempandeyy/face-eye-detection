@@ -5,12 +5,12 @@ app = Flask(__name__)
 camera = cv2.VideoCapture(0)
 
 # Load Haar Cascades for multiple features
-face_cascade = cv2.CascadeClassifier('opencv/data/haarcascades/haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('opencv/data/haarcascades/haarcascade_eye.xml')
-nose_cascade = cv2.CascadeClassifier('C:/Flask/opencv/data/haarcascades/haarcascades_mcs_nose.xml') 
-mouth_cascade = cv2.CascadeClassifier('C:/Flask/opencv/data/haarcascades/haarcascades_mcs_mouth.xml')  
-body_cascade = cv2.CascadeClassifier('opencv/data/haarcascades/haarcascade_fullbody.xml')
-hand_cascade = cv2.CascadeClassifier('C:/Flask/opencv/data/haarcascades/hand.xml') 
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+nose_cascade = cv2.CascadeClassifier('haarcascades_mcs_nose.xml') 
+mouth_cascade = cv2.CascadeClassifier('haarcascades_mcs_mouth.xml')  
+body_cascade = cv2.CascadeClassifier('haarcascade_fullbody.xml')
+hand_cascade = cv2.CascadeClassifier('haarcascades/hand.xml') 
 
 def generater_func():
     while True:
